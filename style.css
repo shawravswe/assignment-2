@@ -1,0 +1,509 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header */
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.brand-logo h1 {
+    /* font-family: 'Grey Qo', cursive; */
+    font-style: italic;
+    color: rgb(248, 83, 65);
+    font-size: 30px;
+}
+.nav-links{
+    border: 2px solid white;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+.nav-links a {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 16px;
+    transition: all ease .4s;
+    /* background: rgb(248, 83, 65); */
+    padding: 2px 10px;
+    border-radius: 10%;
+}
+.nav-links a:hover{
+    background: rgb(248, 83, 65);
+}
+
+.nav-link-last {
+    margin-right: 0;
+}
+
+.hamburger-icon  {
+    display: none;
+}
+.hamburger-icon img {
+    width: 30px;
+}
+
+/* Banner Section */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlighted-text {
+    color: rgb(248, 83, 65);
+    font-family: 'Grey Qo', cursive;
+
+
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+ .btn {
+    padding: 12px 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: rgb(248, 83, 65);
+    color: #000;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.banner-image .image-wrapper {
+    position: relative;
+    width: 450px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.overlay-tutorial {
+    top: -30px;
+    left: -30px;
+}
+
+.overlay-videos {
+    bottom: -30px;
+    right: -30px;
+    background-color: rgb(248, 83, 65);
+}
+
+.color-highlight {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(248, 83, 65);
+    margin-bottom: 10px;
+}
+
+/* Habits Section */
+.habits-container {
+    padding: 60px 100px;
+    background-color: #111;
+}
+
+.section-title h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-title p {
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.habits-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.habit-card {
+    width: 90%;
+    /* background-color: #222; */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.habit-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.habit-card p {
+    font-size: 14px;
+}
+
+/* Extra Mile Section */
+.extra-mile-container {
+    display: flex; 
+    justify-content: space-between;
+    padding: 60px 100px;
+    background-color: #000;
+}
+
+.extra-mile-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #222;
+}
+
+.extra-mile-text h1 {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.extra-mile-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.extra-mile-image img {
+    width: 550px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* BMI Section */
+.bmi-container {
+    padding: 60px 100px;
+    background-color: #111;
+}
+
+.bmi-title h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bmi-title p {
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* BMI Calculator Section */
+.bmi-calculator-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background-color: #000;
+}
+
+.bmi-chart, .bmi-calculator {
+    width: 48%;
+}
+
+.calc-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chart-table {
+    width: 100%;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.chart-table th, .chart-table td {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.chart-table tr:not(:last-child) {
+    border-bottom: 1px solid #333;
+}
+
+.calculator-form {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 48%;
+    padding: 12px;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Team Section */
+.team-container {
+    padding: 60px 100px;
+    background-color: #111;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #222;
+}
+
+.team-member {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.team-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    aspect-ratio: 1;
+}
+
+.team-info{
+    position: absolute;
+    bottom: 10;
+    width: 100%;
+}
+
+.team-info h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.team-info p {
+    font-size: 16px;
+}
+
+/* Footer */
+.footer-container {
+    padding: 40px 100px;
+    background-color: #000;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo h1 {
+    font-family: 'Grey Qo', cursive;
+    color: rgb(248, 83, 65);
+    font-size: 30px;
+}
+
+.footer-links a {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-info p {
+    font-size: 14px;
+    width: 50%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .banner-content {
+        grid-template-columns: 1fr;
+    }
+        .banner-container{
+            padding: 10px 5px;
+        }
+
+        .banner-image .image-wrapper{
+            width: 100%;
+        }
+        .overlay-videos {
+            right: 0;
+        }
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    .banner-buttons .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .extra-mile-text h1 {
+        font-size: 24px;
+    }
+
+    .bmi-title h1 {
+        font-size: 24px;
+    }
+
+    .bmi-title p {
+        font-size: 14px;
+    }
+
+    .calc-title {
+        font-size: 24px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .input-field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .chart-table th, .chart-table td {
+        font-size: 14px;
+    }
+
+    .footer-logo h1 {
+        font-size: 24px;
+    }
+
+    .footer-links a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .footer-info p {
+        font-size: 12px;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .habits-grid {
+    grid-template-columns: 1fr;
+    }
+    .habits-container{
+        padding: 0;
+    }
+    .extra-mile-content,.footer-content,.team-grid{
+        grid-template-columns: 1fr;
+    }
+    .extra-mile-container{
+        padding: 0;
+    }
+    .extra-mile-text{
+        text-align: center;
+    }
+    .extra-mile-image img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bmi-container,.bmi-calculator-container,.team-container,.footer-container{
+        padding: 10px 5px;
+    }
+    .bmi-calculator-container {
+        flex-direction: column;
+    }
+    .bmi-chart, .bmi-calculator,.section-title p,.team-member{
+        width: 100%;
+    }
+    .team-member{
+        padding: 0;
+    }
+    .banner-text{
+        margin-bottom: 40px;
+    }
+}
